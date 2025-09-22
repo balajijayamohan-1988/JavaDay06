@@ -15,8 +15,55 @@ public class Sample {
             	System.out.println("indexOf method is "+indexOf);
             int lastIndexOf = a.lastIndexOf('e');
                 System.out.println("lastIndexOf method is "+lastIndexOf);
-
-
-
+            boolean startsWith = a.startsWith("wel");
+                System.out.println("startswith method is "+startsWith);
+            boolean endsWith = a.endsWith("ome");
+                System.out.println("enddWith method is "+endsWith);
+            String toUpperCase = a.toUpperCase();
+                System.out.println("toUpperCase method is "+toUpperCase);
+        String b = "WELCOME";
+            String toLowerCase = b.toLowerCase();
+                System.out.println("toLowerCase method is "+toLowerCase);
+            boolean equals = a.equals(b);
+                System.out.println("equals method is "+equals);
+            boolean equalsIgnoreCase = a.equalsIgnoreCase(b);
+                System.out.println("equalsIgnoreCase method is "+equalsIgnoreCase);
+            String replace = a.replace('e','a');
+                System.out.println("replace method is "+replace);
+            String replaceAll = a.replaceAll("come","done");
+                System.out.println("replaceAll method is "+replaceAll);
+            String substring = a.substring(2);
+                System.out.println("substring method is "+substring);
+            String substring2 = a.substring(1,6);
+                System.out.println("subString method is "+substring2);
+            String c = "           Hello           ";
+                System.out.println(c);    
+            String trim = c.trim();
+                System.out.println("trim method is "+trim);
+            boolean contains = a.contains("elco");
+                System.out.println("contains method is "+contains);
+            boolean empty = a.isEmpty();
+                System.out.println("isEmpty method is "+empty);    
     }
 }
+/*
+Run output is
+Length method is 7
+charAt method is m
+indexOf method is 1
+lastIndexOf method is 6
+startswith method is true
+enddWith method is true
+toUpperCase method is WELCOME
+toLowerCase method is welcome
+equals method is false
+equalsIgnoreCase method is true
+replace method is walcoma
+replaceAll method is weldone
+substring method is lcome
+subString method is elcom
+           Hello           
+trim method is Hello
+contains method is true
+isEmpty method is false
+*/
