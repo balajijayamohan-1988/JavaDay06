@@ -1,0 +1,22 @@
+//String
+//Example 01
+//project Sample
+package org.test;
+import java.lang.String;
+public class Sample {
+    public static void main(String[] args) {
+        //import java.lang.String
+        String a = "welcome";
+            int length = a.length();
+                System.out.println("Length method is "+length);
+            char charAt = a.charAt(5);
+            	System.out.println("charAt method is "+charAt);
+            int indexOf = a.indexOf('e');	
+            	System.out.println("indexOf method is "+indexOf);
+            int lastIndexOf = a.lastIndexOf('e');
+                System.out.println("lastIndexOf method is "+lastIndexOf);
+
+
+
+    }
+}
