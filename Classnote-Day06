@@ -207,3 +207,19 @@ public class Sample {
 
     }
 }
+/* Run time output
+****Literal String****
+s is Java
+S1 is Java
+1067040082
+1067040082
+s is Java language 
+1325547227
+****Non Literal String****
+s2 is python
+s3 is python
+980546781
+2061475679
+s2 is python language 
+140435067
+*/
