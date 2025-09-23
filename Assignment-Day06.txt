@@ -1,4 +1,81 @@
 //Assignment 01
-//task lesth method
-//praject Sample
-public class 
+//task String method - length
+//project Sample
+package org.test;
+import java.lang.String;
+public class SampleOne {
+    public static void main(String[] args) {
+        String a = "Greenstechnology";
+            int a1 = a.length();
+                System.out.println("GreensTechnology length is "+a1);
+        String b = "SeleniumAutomationtool";
+            int b1 = b.length();
+                System.out.println("SeleniumAutomationtool length is "+b1);
+        String c = "velmurugan";
+            int c1 = c.length();
+                System.out.println("velmurugan length is "+c1);   
+        String d = "j a v a p r o g r a m";
+            int d1 = d.length();
+                System.out.println("j a v a p r o g r a m length is "+d1); 
+        String e = "9944152058";
+            int e1 = e.length();
+                System.out.println("9944252058 length is "+e1);                            
+
+    }
+}
+/* 
+Run time output
+GreensTechnology length is 16
+SeleniumAutomationtool length is 22
+velmurugan length is 10
+j a v a p r o g r a m length is 21
+9944252058 length is 10
+*/
+
+
+
+
+
+//Assignment 02
+//String method indexOf
+//project Sample
+package org.test;
+public class SampleOne {
+    public static void main(String[] args){
+        String a = "GreensTechnology";
+            int a1 = a.lastIndexOf('o');
+                System.out.println("GreensTechnology \n   index value of 'o' is "+a1);
+        String b = "SeleniumAutomationtool";
+        	int b1 = b.indexOf('o');
+        		System.out.println("seleniumAutomationtool \n   index value of 'o' is "+b1);
+        String c = "velmurugan";
+            int c1 = c.indexOf('n');
+                System.out.println("velmurugan \n   index value of 'n' is "+c1);
+        String d = "j a v a p r o g r a m";
+            int d1 = d.indexOf("emptyspace");
+                System.out.println("j a v a p r o g r a m \n   index value of 'emptyspace' is "+d1);
+        String e = "9944152058";
+            int e1 = e.indexOf('8');
+                System.out.println("9944152058 \n   index value is "+e1);    
+
+    }
+}
+/* Run time output is 
+GreensTechnology 
+   index value of 'o' is 13
+SeleniumAutomationtool 
+    index value of 'o' is 11 
+velmurugan 
+    index value of 'n' is 9
+j a v a p r o g r a m
+    index value of emptyspace is -1    
+9944152058
+    index value is 9
+*/
+
+
+
+
+
+//Assignment 03
+//
