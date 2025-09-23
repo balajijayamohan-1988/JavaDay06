@@ -44,6 +44,8 @@ public class Sample {
                 System.out.println("contains method is "+contains);
             boolean empty = a.isEmpty();
                 System.out.println("isEmpty method is "+empty);    
+            int compareTo = a.compareTo(b);
+                System.out.println("compareTo method is "+compareTo);    
     }
 }
 /*
@@ -66,4 +68,5 @@ subString method is elcom
 trim method is Hello
 contains method is true
 isEmpty method is false
+compareTo method si 32
 */
