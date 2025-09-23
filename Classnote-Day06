@@ -1,4 +1,4 @@
-//String
+//String methods
 //Example 01
 //project Sample
 package org.test;
@@ -70,3 +70,140 @@ contains method is true
 isEmpty method is false
 compareTo method si 32
 */
+
+
+
+
+
+//String Type Literal String immutable and Non Literal String immutalble
+//Example 02
+//project Sample
+package org.test;
+import java.util.Hashtable;
+public class Sample {
+    public static void main(String[] args){
+        System.out.println("****Literal String****");
+        String s = "Java";
+        String s1 = "Java";
+            System.out.println("s is "+s);
+            System.out.println("S1 is "+s1);
+            System.out.println(System.identityHashcode("s is "+s));
+            System.out.println(System.identityHashcode("s1 is "+s1));      
+        System.out.println("****Non Literal String****");
+        String s2 = new String("python");
+        String s3 = new String("python");
+            System.out.println("s2 is "+s2);
+            System.out.println("s3 is "+s3);
+            System.out.println(System.identityHashcode(s2));//identityHashcode should be in ITALIC FONT
+            System.out.println(System.identityHashcode(s3));
+            
+    }
+}
+/* Run time output
+****Literal String****
+s is Java
+S1 is Java
+1067040082
+1325547227
+****Non Literal String****
+s2 is python
+s3 is python
+980546781
+2061475679
+
+*/
+
+
+
+
+
+//String type (Literal change value & Non Literal Mutable change value)
+//Example 03
+//project Sample
+package org.test;
+import java.util.HashTable;
+public class SampleOne {
+    public static void main(String[] args) {
+        System.out.println("***Literal-Immutable String");
+            String s = "Java";
+            String s1 = "Java";
+                System.out.println("s is "+s);
+                System.out.println("s1 is "+s1);
+                System.out.println(System.identityHashcode(s));
+                System.out.println(System.identityHashcode(s1));
+            s = s.concat(s1);
+                System.out.println("s is "+s);
+                System.out.println(System.identityHashcode(s));
+        System.out.println("***Non Literal-Mutable String***");        
+            StringBuffer s2 = new StringBuffer("python");
+            StringBuffer s3 = new StringBuffer("python");
+                System.out.println(s2);
+                System.out.println(s3);
+                System.out.println(System.identityHashcode(s2));
+                System.out.println(System.identityHashcode(s3));    
+            s2 = s2.append(" is language");
+            s3 = s3.append(" is language"); 
+                System.out.println(s2);
+                System.out.println(s3);
+                System.out.println(System.indentityHasecode(s2));
+                System.out.println(System.indentityHasecode(s3));
+
+                      
+    }
+}
+/* Run Time output
+***Literal-Immutable String
+s is Java
+s1 is Java
+1067040082
+1067040082
+s is JavaJava
+1325547227
+***Non Literal-Mutable String***
+python
+python
+980546781
+2061475679
+python is language
+python is language
+980546781
+2061475679
+*/
+
+
+
+
+
+
+
+//String Type Literal String and Non Literal immutable String both value change
+//Example 04
+//project Sample
+package org.test;
+import java.util.Hashtable;
+public class Sample {
+    public static void main(String[] args){
+        System.out.println("****Literal String****");
+        String s = "Java";
+        String s1 = "Java";
+            System.out.println("s is "+s);
+            System.out.println("S1 is "+s1);
+            System.out.println(System.identityHashCode(s));
+            System.out.println(System.identityHashCode(s1));    
+        s = s.concat(" language ");
+        System.out.println("s is "+s);
+        System.out.println(System.identityHashCode("s is "+s));
+        
+        System.out.println("****Non Literal String****");
+        String s2 = new String("python");
+        String s3 = new String("python");
+            System.out.println("s2 is "+s2);
+            System.out.println("s3 is "+s3);
+            System.out.println(System.identityHashCode(s2));//identityHashcode should be in ITALIC FONT
+            System.out.println(System.identityHashCode(s3));
+        s2 = s2.concat(" language ");    
+        	System.out.println("s2 is "+s2);
+            System.out.println(System.identityHashCode(s2));//identityHashcode should be in ITALIC FONT
+
+    }
+}
