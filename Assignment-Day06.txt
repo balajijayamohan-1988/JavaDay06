@@ -139,8 +139,28 @@ public class SampleOne {
                     System.out.println("Input 2 is "+b);
         boolean ab = a.equals(b);
             System.out.println(ab);        
+    }
+}
+/* Runtime output
+Enter Input 1 
+Java
+Input 1 is Java
+Enter Input 2 
+Java
+Input 2 is Java
+true
+*/
+
+
+
 
 //Example 2
+//String equal method
+//project Sample
+package org.test;
+import java.util.Scanner;
+public class SampleOne {
+    public static void main(String[] args){
         Scanner sca1 = new Scanner(System.in);    
             System.out.println("Enter Input 1 ");
                 String c = sca1.nextLine();
@@ -150,11 +170,110 @@ public class SampleOne {
                     System.out.println("Input 2 is "+d);
             boolean cd = c.equals(d);
                 System.out.println(cd);        
+    }
+}
+/* Runtime output
+Enter Input 1 
+Java
+Input 1 is Java
+Enter Input 2 
+java
+Input 2 is java
+false
+*/
+
+
+
+
+//Example 3
+//String equal method
+//project Sample
+package org.test;
+import java.util.Scanner;
+public class SampleOne {
+    public static void main(String[] args) {
+          Scanner sca2 = new Scanner(System.in);
+            System.out.println("Enter input 1");
+                String e = sca2.nextLine();
+                    System.out.println("Input 1 is "+e);
+            System.out.println("Enter input 2");
+                String f = sca2.nextLine();
+                    System.out.println("Input 2 is "+f);
+                        boolean g = e.equals(f);           
+                            System.out.println(g);
+    }
+}
+/* runtime output
+Enter input 1
+Green Technology
+Input 1 is Green Technology
+Enter input 2
+GreenTechnology.
+Input 2 is GreenTechnology.
+false
+*/
+
+
+
+
+
+//Example 04
+//String method equalsIgnoreCase 
+//project Sample
+package org.test;
+import java.util.Scanner;
+public class SampleOne {
+    public static void main(String[] args) {
+        Scanner sca = new Scanner(System.in);
+            System.out.println("Enter input 1");
+                String a = sca.nextLine();
+                    System.out.println("Input 1 is "+a);
+            System.out.println("Enter output 2");
+                String b = sca.nextLine();
+                    System.out.println("Input 2 is "+b);        
+                        boolean c = a.equalsIgnoreCase(b);
+                            System.out.println(c);
 
     }
 }
+/* Runtime output
+Enter input 1
+Java
+Input 1 is Java
+Enter output 2
+java
+Input 2 is java
+true
+*/
 
 
 
 
 
+//Example 05
+//String method equalsIgnoreCase 
+//project Sample
+package org.test;
+import java.util.Scanner;
+public class SampleOne {
+    public static void main(String[] args) {
+        Scanner sca = new Scanner(System.in);
+            System.out.println("Enter input 1");
+                String a = sca.nextLine();
+                    System.out.println("Input 1 is "+a);
+            System.out.println("Enter input 2");
+                String b = sca.nextLine();
+                    System.out.println("Input 2 is "+b);
+                       boolean c = a.equalsIgnoreCase(b);
+                            System.out.println(c);     
+    }
+}
+/* Runtime output
+Enter input 1
+Nisha
+Input 1 is Nisha
+Enter input 2
+nisha
+Input 2 is nisha
+true
+*/
